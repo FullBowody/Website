@@ -131,7 +131,7 @@
             </div>
 
             <div class="flex p-8 justify-center">
-                <div class="flex w-fit flex-col items-center rounded-xl py-8 px-12 bg-slate-800 shadow-xl shadow-slate-800 space-y-8">
+                <div class="flex w-fit flex-col items-center rounded-xl py-8 px-12 bg-white dark:bg-slate-800 shadow-xl shadow-slate-300 dark:shadow-slate-800 space-y-8">
                     <p class="text-center text-2xl md:text-4xl font-semibold text-sky-500">
                         Download FullBowody
                     </p>
@@ -139,12 +139,12 @@
                         <div
                             v-for="download in downloads"
                             :key="download.platform"
-                            class="px-12 py-8 rounded-lg bg-slate-700 border-2"
-                            :class="platform === download.platform ? 'border-sky-500' : 'border-slate-600'"
+                            class="px-12 py-8 rounded-lg bg-slate-100 dark:bg-slate-700 border-2"
+                            :class="platform === download.platform ? 'border-sky-500' : 'border-slate-200 dark:border-slate-600'"
                         >
                             <div
                                 class="flex justify-center"
-                                :class="platform === download.platform ? 'text-sky-500' : 'text-slate-200'"
+                                :class="platform === download.platform ? 'text-sky-500' : 'text-slate-700 dark:text-slate-200'"
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" :viewBox="download.viewbox" class="h-20" fill="currentColor">
                                     <path :d="download.path" />
