@@ -1,3 +1,14 @@
 {
-    "Title": "Home"
+    "Title": "Home",
+    "ConnectCamera": "Connect any camera to FullBowody",
+    "ConnectCameraDesc": "FullBowody is compatible with any camera that can be connected to a computer. This includes webcams, DSLRs, and even Kinect sensors.\nYou can also use your phone as a wireless camera by installing the FullBowody app on it.",
+    "TrackBody": "Track your body in realtime",
+    "TrackBodyDesc": "Start tracking your entire body in realtime with FullBowody's powerful tracking system.\nAnd visualize your body moving in realtime thanks to the preview window.",
+    "LinkFullbowody": "Link FullBowody to any game or software",
+    "LinkFullbowodyDesc": "FullBowody has a complete extension system that allows you to link it to any game or software that supports it.\nThis allows you to share the tracking data from FullBowody with any other application.",
+    "PlayEverything": "Play or record everything you want",
+    "PlayEverythingDesc": "Now that everything is setup correctly, you use FullBowody to play games with your friends or record animations for your next project!",
+    "ReadyQuestion": "Ready to get started?",
+    "DownloadFullbowody": "Download Fullbowody",
+    "Download": "Download"
 }

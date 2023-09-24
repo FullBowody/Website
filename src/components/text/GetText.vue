@@ -1,11 +1,11 @@
 <template>
     <div v-if="!loading">
-        <span
+        <p
             v-for="line in text.split('\n')"
             :key="line"
         >
             {{ line }}
-        </span>
+        </p>
     </div>
     <span
         v-else

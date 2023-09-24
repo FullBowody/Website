@@ -26,11 +26,13 @@
                         </div>
                         <div class="h-fit p-4 md:p-16 space-y-4">
                             <p class="text-2xl md:text-4xl font-semibold text-slate-700 dark:text-slate-200">
-                                Connect any camera to FullBowody
+                                <get-text :context="Lang.CreateTranslationContext('home', 'ConnectCamera')" />
                             </p>
-                            <div class="space-y-2 text-lg md:text-xl font-base text-slate-500 dark:text-slate-400">
-                                <p> FullBowody is compatible with any camera that can be connected to a computer. This includes webcams, DSLRs, and even Kinect sensors. </p>
-                                <p> You can also use your phone as a wireless camera by installing the FullBowody app on it. </p>
+                            <div class="text-lg md:text-xl font-base text-slate-500 dark:text-slate-400">
+                                <get-text
+                                    class="space-y-2"
+                                    :context="Lang.CreateTranslationContext('home', 'ConnectCameraDesc')"
+                                />
                             </div>
                         </div>
                     </div>
@@ -57,11 +59,13 @@
                         </div>
                         <div class="h-fit p-4 md:p-16 space-y-4">
                             <p class="text-2xl md:text-4xl font-semibold text-slate-700 dark:text-slate-200">
-                                Track your body in realtime
+                                <get-text :context="Lang.CreateTranslationContext('home', 'TrackBody')" />
                             </p>
-                            <div class="space-y-2 text-lg md:text-xl font-base text-slate-500 dark:text-slate-400">
-                                <p> Start tracking your entire body in realtime with FullBowody's powerful tracking system. </p>
-                                <p> And visualize your body moving in realtime thanks to the preview window. </p>
+                            <div class="text-lg md:text-xl font-base text-slate-500 dark:text-slate-400">
+                                <get-text
+                                    class="space-y-2"
+                                    :context="Lang.CreateTranslationContext('home', 'TrackBodyDesc')"
+                                />
                             </div>
                         </div>
                     </div>
@@ -78,11 +82,13 @@
                         </div>
                         <div class="h-fit p-4 md:p-16 space-y-4">
                             <p class="text-2xl md:text-4xl font-semibold text-slate-700 dark:text-slate-200">
-                                Link FullBowody to any game or software
+                                <get-text :context="Lang.CreateTranslationContext('home', 'LinkFullbowody')" />
                             </p>
-                            <div class="space-y-2 text-lg md:text-xl font-base text-slate-500 dark:text-slate-400">
-                                <p> FullBowody has a powerful extension system that allows you to link it to any game or software that supports it. </p>
-                                <p> This allows you to share the tracking data from FullBowody with any other application. </p>
+                            <div class="text-lg md:text-xl font-base text-slate-500 dark:text-slate-400">
+                                <get-text
+                                    class="space-y-2"
+                                    :context="Lang.CreateTranslationContext('home', 'LinkFullbowodyDesc')"
+                                />
                             </div>
                         </div>
                     </div>
@@ -109,10 +115,13 @@
                         </div>
                         <div class="h-fit p-4 md:p-16 space-y-4">
                             <p class="text-2xl md:text-4xl font-semibold text-slate-700 dark:text-slate-200">
-                                Play or record everything you want
+                                <get-text :context="Lang.CreateTranslationContext('home', 'PlayEverything')" />
                             </p>
-                            <div class="space-y-2 text-lg md:text-xl font-base text-slate-500 dark:text-slate-400">
-                                <p> Now that everything is setup correctly, you use FullBowody to play games with your friends or record animations for your next project! </p>
+                            <div class="text-lg md:text-xl font-base text-slate-500 dark:text-slate-400">
+                                <get-text
+                                    class="space-y-2" 
+                                    :context="Lang.CreateTranslationContext('home', 'PlayEverythingDesc')"
+                                />
                             </div>
                         </div>
                     </div>
@@ -126,14 +135,14 @@
 
             <div class="flex justify-center items-center w-full h-fit">
                 <p class="text-2xl md:text-4xl font-semibold text-slate-700 dark:text-slate-200">
-                    Ready to get started?
+                    <get-text :context="Lang.CreateTranslationContext('home', 'ReadyQuestion')" />
                 </p>
             </div>
 
             <div class="flex p-8 justify-center">
                 <div class="flex w-fit flex-col items-center rounded-xl py-8 px-12 bg-white dark:bg-slate-800 shadow-xl shadow-slate-300 dark:shadow-slate-800 space-y-8">
                     <p class="text-center text-2xl md:text-4xl font-semibold text-sky-500">
-                        Download FullBowody
+                        <get-text :context="Lang.CreateTranslationContext('home', 'DownloadFullbowody')" />
                     </p>
                     <div class="flex flex-col md:flex-row justify-evenly items-center space-y-4 md:space-x-12 md:space-y-0">
                         <div
@@ -154,7 +163,9 @@
                                 {{ download.name }}
                             </p>
                             <div class="flex pt-16">
-                                <comp-btnblock :disabled="true"> Download </comp-btnblock>
+                                <comp-btnblock :disabled="true">
+                                    <get-text :context="Lang.CreateTranslationContext('home', 'Download')" />
+                                </comp-btnblock>
                             </div>
                         </div>
                     </div>
@@ -167,8 +178,10 @@
 <script>
 import CompIcon from '../components/CompIcon.vue';
 import CompBtnblock from '../components/inputs/CompBtnblock.vue';
+import GetText from '../components/text/GetText.vue';
 import * as DDDview from '../scripts/3Dview.js';
 import { animateShows } from '../scripts/common';
+import Lang from '../scripts/Lang';
 
 import {
     CameraIcon,
@@ -208,10 +221,12 @@ export default {
         BoltIcon,
         LinkIcon,
         VideoCameraIcon,
-        ArrowDownTrayIcon
+        ArrowDownTrayIcon,
+        GetText
     },
     data() {
         return {
+            Lang,
             platform: this.getPlatformFromUserAgent(),
             downloads
         };
