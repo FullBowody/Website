@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+::root {
+    --scroll-1: 0;
+    --scroll-2: 0;
+    --scroll-3: 0;
+    --scroll-4: 0;
+}
+
 @keyframes show-up {
     0% { opacity: 0; transform: translateY(20px); }
     100% { opacity: 1; transform: translateY(0); }
@@ -105,3 +112,12 @@
 
 .w-inherit { width: inherit; }
 .h-inherit { height: inherit; }
+
+.rotate3D-right-1 { transform: perspective(1000px) rotate3d(0.3, var(--scroll-1), 0, 30deg); }
+.rotate3D-right-2 { transform: perspective(1000px) rotate3d(-0.3, var(--scroll-2), 0, -30deg); }
+.rotate3D-right-3 { transform: perspective(1000px) rotate3d(0.3, var(--scroll-3), 0, 30deg); }
+.rotate3D-right-4 { transform: perspective(1000px) rotate3d(-0.3, var(--scroll-4), 0, -30deg); }
+
+.icon-shadow {
+    filter: drop-shadow(0px 10px 20px #0c4a6e40);
+}

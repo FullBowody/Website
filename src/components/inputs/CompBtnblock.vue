@@ -9,12 +9,12 @@
             <component
                 :is="link ? (link.startsWith('http') ? 'a' : 'router-link') : 'button'"
                 ref="btn"
-                class="py-1 px-2 outline-none rounded max-w-full"
+                class="py-1 px-3 outline-none rounded max-w-full"
                 :class="(disabled? ' cursor-default': '') + classes"
                 :to="href"
                 :href="href"
             >
-                <p class="text-md font-semibold whitespace-nowrap text-ellipsis overflow-hidden max-w-full min-w-0 w-fit h-fit max-h-full min-h-0">
+                <p class="text-lg font-semibold whitespace-nowrap text-ellipsis overflow-hidden max-w-full min-w-0 w-fit h-fit max-h-full min-h-0">
                     <slot />
                 </p>
             </component>
