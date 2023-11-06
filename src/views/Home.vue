@@ -163,7 +163,10 @@
                                 {{ download.name }}
                             </p>
                             <div class="flex pt-16">
-                                <comp-btnblock :disabled="true">
+                                <comp-btnblock
+                                    :disabled="!download.link"
+                                    @click="startDownload(download.link)"
+                                >
                                     <get-text :context="Lang.CreateTranslationContext('home', 'Download')" />
                                 </comp-btnblock>
                             </div>
@@ -196,7 +199,8 @@ const downloads = [
         platform: 'windows',
         name: 'Windows',
         viewbox: '0 0 448 512',
-        path: "M0 93.7l183.6-25.3v177.4H0V93.7zm0 324.6l183.6 25.3V268.4H0v149.9zm203.8 28L448 480V268.4H203.8v177.9zm0-380.6v180.1H448V32L203.8 65.7z"
+        path: "M0 93.7l183.6-25.3v177.4H0V93.7zm0 324.6l183.6 25.3V268.4H0v149.9zm203.8 28L448 480V268.4H203.8v177.9zm0-380.6v180.1H448V32L203.8 65.7z",
+        link: "https://cdn.furwaz.fr/fullbowody/FullBowody-0.1.0-Setup.exe"
     },
     {
         platform: 'macos',
@@ -259,6 +263,11 @@ export default {
             if (ua.includes('Mac')) return 'macos';
             if (ua.includes('Linux')) return 'linux';
             return 'unknown';
+        },
+        startDownload(link) {
+            if (link) {
+                window.open(link, '_blank');
+            }
         }
     }
 }
