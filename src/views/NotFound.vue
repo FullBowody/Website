@@ -1,18 +1,18 @@
 <template>
     <div class="flex flex-col grow justify-evenly items-center space-y-8">
-        <comp-icon class="text-sky-500 h-20" />
+        <CompIcon class="text-sky-500 h-20" />
         <div class="flex flex-col justify-center space-y-8 items-center">
-            <comp-card class="m-4 p-4 space-y-4">
+            <CompCard class="m-4 p-4 space-y-4">
                 <p class="text-xl font-semibold text-center">
-                    <get-text :context="Lang.CreateTranslationContext('notfound', 'Title')" />
+                    <GetText :context="Lang.CreateTranslationContext('notfound', 'Title')" />
                 </p>
                 <p class="text-lg font-base text-center">
-                    <get-text :context="Lang.CreateTranslationContext('notfound', 'Desc')" />
+                    <GetText :context="Lang.CreateTranslationContext('notfound', 'Desc')" />
                 </p>
-            </comp-card>
-            <comp-btnblock :onclick="goHome">
-                <get-text :context="Lang.CreateTranslationContext('notfound', 'Back')" />
-            </comp-btnblock>
+            </CompCard>
+            <CompBtnblock :onclick="goHome">
+                <GetText :context="Lang.CreateTranslationContext('notfound', 'Back')" />
+            </CompBtnblock>
         </div>
     </div>
 </template>*

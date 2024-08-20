@@ -1,0 +1,7 @@
+name: fullbowody-web
+services:
+  web:
+    build: .
+    ports:
+      - 5000:80
+    restart: unless-stopped

@@ -2,34 +2,30 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- META WEBSITE INFOS -->
     <meta property="og:title" content="FullBowody">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://fullbowody.projects.furwaz.fr/">
-    <meta property="og:image" content="img/icon.png">
-    <meta property="og:description" content="FullBowody">
-    
-    <!-- WPA APP INFOS -->
-    <meta name="theme-color" content="#0ea5e9">
-    <meta name="author" content="FullBowody" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="FullBowody">
-    <link rel="apple-touch-icon" href="app/icon.png">
-    <link rel="icon" href="img/icon.png" type="image/png">
-    <meta name="description" content="Track your body with two or more basic cameras!">
-    <link rel="manifest" href="/app.webmanifest" crossorigin="use-credentials" />
-    
+    <meta property="og:image" content="/img/icon.png">
+    <meta property="og:description" content="Track your body in real time with simple cameras!">
+
+    <!-- META GENERAL INFOS -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="FullBowody">
+    <meta name="description" content="Track your body in real time with simple cameras!">
+    <meta name="keywords" content="fullbowody, body, tracking, camera, ai, artificial, intelligence">
+
     <title> FullBowody </title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="/img/icon.png" type="image/png">
 </head>
 
-<body class="flex bg-slate-700 w-screen h-screen overflow-x-hidden">
-    <div id="app" class="flex grow min-w-0 min-h-0"></div>
-    <script type="module" src="/src/main.js"></script>
-    
+<body>
+    <div id="app" class="flex h-full w-full" />
+    <script type="module" src="/src/main.ts"></script>
+
     <noscript>
         <strong>We're sorry but FullBowody doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>

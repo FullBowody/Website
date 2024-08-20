@@ -1,34 +1,32 @@
 <template>
-    <div class="flex flex-col grow min-w-0 min-h-0 dark:bg-slate-700 bg-slate-50 dark:text-slate-200 text-slate-700 overflow-hidden">        
-        <router-view />
+    <div class="flex grow bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 min-w-0 max-w-full">
+        <div class="flex grow overflow-x-hidden overflow-y-auto">
+            <RouterView />
+        </div>
     </div>
 </template>
 
-<script>
-export default {
-    name: "App",
+<script lang="ts">
+import { defineComponent } from "vue";
+import { RouterView } from "vue-router";
+
+export default defineComponent({
     components: {
-        
+        RouterView
     },
     data() {
-        return {}
+        return {
+            lastScroll: 0
+        }
+    },
+    setup() {
+        
     },
     mounted() {
-        let theme = localStorage.getItem('theme');
-        if (!theme) theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        if (theme === 'dark') {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
-
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-            if (e.matches) {
-                document.documentElement.classList.add('dark');
-            } else {
-                document.documentElement.classList.remove('dark');
-            }
-        });
+        
     }
-};
+});
 </script>
+
+<style>
+</style>
