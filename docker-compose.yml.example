@@ -1,6 +1,7 @@
+name: fullbowody-web
 services:
   web:
     build: .
     ports:
-      - "80:80"
-    restart: always
+      - 80:80
+    restart: unless-stopped
