@@ -1,14 +1,12 @@
 {
-    "Title": "Accueil",
-    "ConnectCamera": "Connectez n'importe quelle caméra à FullBowody",
-    "ConnectCameraDesc": "FullBowody est compatible avec n'importe quelle caméra pouvant être connectée à un ordinateur. Cela inclut les webcams, les appareils photo DSLR et même les capteurs Kinect.\nVous pouvez également utiliser votre téléphone comme une caméra sans fil en y installant l'application FullBowody.",
-    "TrackBody": "Suivez votre corps en temps réel",
-    "TrackBodyDesc": "Commencez à suivre l'intégralité de votre corps en temps réel grâce au puissant système de suivi de FullBowody.\nEt visualisez votre corps se déplacer en temps réel grâce à la fenêtre de prévisualisation.",
-    "LinkFullbowody": "Liez FullBowody à n'importe quel jeu ou logiciel",
-    "LinkFullbowodyDesc": "FullBowody dispose d'un système d'extension complet qui vous permet de le lier à n'importe quel jeu ou logiciel qui le prend en charge.\nCela vous permet de partager les données de suivi de FullBowody avec n'importe quelle autre application.",
-    "PlayEverything": "Jouez ou enregistrez tout ce que vous voulez",
-    "PlayEverythingDesc": "Maintenant que tout est configuré correctement, vous pouvez utiliser FullBowody pour jouer à des jeux avec vos amis ou enregistrer des animations pour votre prochain projet !",
-    "ReadyQuestion": "Prêt à commencer ?",
-    "DownloadFullbowody": "Téléchargez Fullbowody",
-    "Download": "Télécharger"
+    "Title": "FullBowody",
+    "Subtitle": "Traquez votre corps en temps réel avec de simples caméras !",
+    "StepNumber": "Étape {step}",
+    "PlaceCameras": "Placez vos caméras dans la pièce",
+    "PlaceCamerasDesc": "Que ce soit un smartphone, une webcam ou une caméra de surveillance, FullBowody peut utiliser n'importe quelle caméra pour traquer votre corps en temps réel.\nIl suffit seulement de cadrer la caméra sur un marqueur de référence et FullBowody se charge du reste.",
+    "PlaceMarkers": "Placez un marqueur de référence",
+    "PlaceMarkersDesc": "Sélectionnez le marqueur de référence de votre choix et placez-le dans la pièce afin que la caméra puisse le voir.\nFullBowody se chargera de trouver le marqueur et positionnera votre corps en conséquence pour un suivi toujours plus précis.",
+    "AllReady": "Tout est bon !",
+    "StartTracking": "Lancez le suivi, et amusez-vous !",
+    "StartTrackingDesc": "Tout est prêt ! Il ne vous reste plus qu'à lancer le suivi et à connecter des applications tierces pour profiter de ce suivi instantané.\nQue ce soit pour des jeux, des applications de fitness ou de santé, de la réalité augmentée ou virtuelle, FullBowody est prêt à vous suivre partout !"
 }

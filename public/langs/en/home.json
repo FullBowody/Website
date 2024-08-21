@@ -1,14 +1,12 @@
 {
-    "Title": "Home",
-    "ConnectCamera": "Connect any camera to FullBowody",
-    "ConnectCameraDesc": "FullBowody is compatible with any camera that can be connected to a computer. This includes webcams, DSLRs, and even Kinect sensors.\nYou can also use your phone as a wireless camera by installing the FullBowody app on it.",
-    "TrackBody": "Track your body in realtime",
-    "TrackBodyDesc": "Start tracking your entire body in realtime with FullBowody's powerful tracking system.\nAnd visualize your body moving in realtime thanks to the preview window.",
-    "LinkFullbowody": "Link FullBowody to any game or software",
-    "LinkFullbowodyDesc": "FullBowody has a complete extension system that allows you to link it to any game or software that supports it.\nThis allows you to share the tracking data from FullBowody with any other application.",
-    "PlayEverything": "Play or record everything you want",
-    "PlayEverythingDesc": "Now that everything is setup correctly, you use FullBowody to play games with your friends or record animations for your next project!",
-    "ReadyQuestion": "Ready to get started?",
-    "DownloadFullbowody": "Download Fullbowody",
-    "Download": "Download"
+    "Title": "FullBowody",
+    "Subtitle": "Track your body in real-time with simple cameras!",
+    "StepNumber": "Step {step}",
+    "PlaceCameras": "Place your cameras in the room",
+    "PlaceCamerasDesc": "Whether it's a smartphone, webcam, or surveillance camera, FullBowody can use any camera to track your body in real-time.\nJust frame the camera on a reference marker and FullBowody takes care of the rest.",
+    "PlaceMarkers": "Place a reference marker",
+    "PlaceMarkersDesc": "Select the reference marker of your choice and place it in the room where the camera can see it.\nFullBowody will find the marker and position your body accordingly for even more precise tracking.",
+    "AllReady": "All set!",
+    "StartTracking": "Start tracking and have fun!",
+    "StartTrackingDesc": "Everything is ready! All you have to do is start tracking and connect third-party applications to enjoy this instant tracking.\nWhether it's for games, fitness or health apps, augmented or virtual reality, FullBowody is ready to follow you everywhere!"
 }
