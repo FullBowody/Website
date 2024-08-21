@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { ArucoDictName, getArucoImage } from './aruco';
 
 type Point3 = {x: number, y: number, z: number};
 const CAMERA_GLB_SRC = '/models/camera.glb';
@@ -91,6 +92,19 @@ export default class ThreeScene {
             marker.position.set(0, 0, 0);
             marker.rotateX(-Math.PI / 2);
             this.scene.add(marker);
+
+            getArucoImage(256, 0.1, ArucoDictName.DICT_4X4, 4).then((aruco) => {
+                const arucoTexture = new THREE.CanvasTexture(aruco as any);
+                arucoTexture.magFilter = THREE.NearestFilter;
+                arucoTexture.minFilter = THREE.NearestFilter;
+                marker.traverse((child: any) => {
+                    if (child.isMesh && child.material.color.getHex() === MATERIALS[2]) {
+                        child.material = new THREE.MeshBasicMaterial({color: 0xffffff});
+                        child.material.map = arucoTexture;
+                        child.material.needsUpdate = true;
+                    }
+                });
+            });
         });
     }
 }

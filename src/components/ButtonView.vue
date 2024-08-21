@@ -15,7 +15,7 @@ export default defineComponent({
     },
     props: {
         icon: {
-            type: Object,
+            type: [Object, Function],
             required: false
         },
         disabled: {

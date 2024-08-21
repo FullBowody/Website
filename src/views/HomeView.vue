@@ -27,7 +27,7 @@
                             </p>
                         </div>
                         <div class="show-right flex flex-col bg-white dark:bg-slate-700 border-4 border-slate-200 dark:border-slate-600 rounded-xl shadow-xl p-8 justify-center items-center space-y-8">
-                            <p class="text-4xl font-bold text-sky-500">
+                            <p class="text-4xl font-bold text-sky-500 text-center">
                                 <GetText :context="Lang.CreateTranslationContext('home', 'PlaceCameras')" />
                             </p>
                             <p class="text-xl text-center">
@@ -44,7 +44,7 @@
                             </p>
                         </div>
                         <div class="show-left flex flex-col bg-white dark:bg-slate-700 border-4 border-slate-200 dark:border-slate-600 rounded-xl shadow-xl p-8 justify-center items-center space-y-8">
-                            <p class="text-4xl font-bold text-sky-500">
+                            <p class="text-4xl font-bold text-sky-500 text-center">
                                 <GetText :context="Lang.CreateTranslationContext('home', 'PlaceMarkers')" />
                             </p>
                             <p class="text-xl text-center">
@@ -61,7 +61,7 @@
                             </p>
                         </div>
                         <div class="show-up flex flex-col bg-white dark:bg-slate-700 border-4 border-slate-200 dark:border-slate-600 rounded-xl shadow-xl p-8 justify-center items-center space-y-8">
-                            <p class="text-4xl font-bold text-sky-500">
+                            <p class="text-4xl font-bold text-sky-500 text-center">
                                 <GetText :context="Lang.CreateTranslationContext('home', 'StartTracking')" />
                             </p>
                             <p class="text-xl text-center">
