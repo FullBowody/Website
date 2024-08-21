@@ -1,6 +1,7 @@
 {
     "Title": "FullBowody",
     "Subtitle": "Track your body in real-time with simple cameras!",
+    "Download": "Download",
     "StepNumber": "Step {step}",
     "PlaceCameras": "Place your cameras in the room",
     "PlaceCamerasDesc": "Whether it's a smartphone, webcam, or surveillance camera, FullBowody can use any camera to track your body in real-time.\nJust frame the camera on a reference marker and FullBowody takes care of the rest.",

@@ -1,8 +1,8 @@
 <template>
-    <button class="flex space-x-2 justify-center items-center rounded-lg p-2 border-2 border-slate-600 bg-slate-600 text-slate-200
-                   hover:border-slate-500 transition-all">
-        <component v-if="icon" :is="icon" class="w-6 h-6 text-slate-200" />
-        <p class="text-base px-1"> <slot /> </p>
+    <button class="flex space-x-2 justify-center items-center rounded-lg p-2 bg-slate-200 dark:bg-slate-600 border-2 border-slate-200 dark:border-slate-600"
+        :class="disabled ? 'opacity-75 cursor-default' : 'hover:border-slate-400 hover:dark:border-slate-500 transition-all'">
+        <component v-if="icon" :is="icon" class="w-6 h-6" />
+        <p class="text-base font-semibold px-1"> <slot /> </p>
     </button>
 </template>
 
@@ -17,6 +17,11 @@ export default defineComponent({
         icon: {
             type: Object,
             required: false
+        },
+        disabled: {
+            type: Boolean,
+            required: false,
+            default: false
         }
     },
     setup() {

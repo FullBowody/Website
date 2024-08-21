@@ -1,6 +1,7 @@
 {
     "Title": "FullBowody",
     "Subtitle": "Traquez votre corps en temps réel avec de simples caméras !",
+    "Download": "Télécharger",
     "StepNumber": "Étape {step}",
     "PlaceCameras": "Placez vos caméras dans la pièce",
     "PlaceCamerasDesc": "Que ce soit un smartphone, une webcam ou une caméra de surveillance, FullBowody peut utiliser n'importe quelle caméra pour traquer votre corps en temps réel.\nIl suffit seulement de cadrer la caméra sur un marqueur de référence et FullBowody se charge du reste.",
