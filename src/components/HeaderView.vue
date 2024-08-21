@@ -4,7 +4,7 @@
             <img src="/img/transparent.png" alt="FullBowody Icon" class="w-10 h-10">
             <p class="text-xl font-bold text-sky-500"> FullBowody </p>
         </RouterLink>
-        <div class="flex space-x-8">
+        <div class="hidden md:flex space-x-8">
             <RouterLink v-for="link in links" :key="link.name" :to="link.href"
                 class="flex space-x-2 justify-center items-center rounded-lg p-2 border-2"
                 :class="linkSelected(link)? 'border-slate-600' : 'border-transparent'">

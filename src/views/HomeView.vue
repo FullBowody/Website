@@ -4,13 +4,13 @@
         <div ref="content" class="absolute flex flex-col h-full w-full overflow-auto">
             <div class="flex flex-col h-fit w-full">
                 <div ref="part0" class="flex flex-col h-screen w-full justify-center items-center space-y-8">
-                    <div class="show-up flex justify-center items-center space-x-8">
-                        <img src="/img/transparent.png" alt="FullBowody Icon" class="w-32 h-32">
-                        <p class="drop-shadow-xl text-8xl font-bold text-sky-500">
+                    <div class="show-up flex justify-center items-center space-x-2 lg:space-x-8">
+                        <img src="/img/transparent.png" alt="FullBowody Icon" class="w-20 h-20 lg:w-32 lg:h-32">
+                        <p class="drop-shadow-xl text-4xl lg:text-8xl font-bold text-sky-500">
                             <GetText :context="Lang.CreateTranslationContext('home', 'Title')" />
                         </p>
                     </div>
-                    <p class="show-up drop-shadow-xl text-2xl font-semibold">
+                    <p class="show-up drop-shadow-xl text-xl lg:text-2xl font-semibold text-center">
                         <GetText :context="Lang.CreateTranslationContext('home', 'Subtitle')" />
                     </p>
                     <div class="show-down p-8">
@@ -19,52 +19,52 @@
                         </ButtonView>
                     </div>
                 </div>
-                <div ref="part1" class="flex h-screen w-full justify-start items-center space-y-8 p-20">
-                    <div class="flex flex-col max-w-[50%]">
+                <div ref="part1" class="flex h-screen w-full justify-start items-center space-y-8 p-4 lg:p-20">
+                    <div class="flex flex-col lg:max-w-[50%]">
                         <div class="show-right flex justify-center items-center p-6">
-                            <p class="drop-shadow-xl text-6xl font-bold">
+                            <p class="drop-shadow-xl text-4xl lg:text-6xl font-bold text-center">
                                 <GetText :context="Lang.CreateTranslationContext('home', 'StepNumber', {step: 1})" />
                             </p>
                         </div>
                         <div class="show-right flex flex-col bg-white dark:bg-slate-700 border-4 border-slate-200 dark:border-slate-600 rounded-xl shadow-xl p-8 justify-center items-center space-y-8">
-                            <p class="text-4xl font-bold text-sky-500 text-center">
+                            <p class="text-2xl lg:text-4xl font-bold text-sky-500 text-center">
                                 <GetText :context="Lang.CreateTranslationContext('home', 'PlaceCameras')" />
                             </p>
-                            <p class="text-xl text-center">
+                            <p class="text-md lg:text-xl text-center">
                                 <GetText class="flex flex-col space-y-4" :context="Lang.CreateTranslationContext('home', 'PlaceCamerasDesc')" />
                             </p>
                         </div>
                     </div>
                 </div>
-                <div ref="part2" class="flex h-screen w-full justify-end items-center space-y-8 p-20">
-                    <div class="flex flex-col max-w-[50%]">
+                <div ref="part2" class="flex h-screen w-full justify-end items-center space-y-8 p-4 lg:p-20">
+                    <div class="flex flex-col lg:max-w-[50%]">
                         <div class="show-left flex justify-center items-center p-6">
-                            <p class="drop-shadow-xl text-6xl font-bold">
+                            <p class="drop-shadow-xl text-4xl lg:text-6xl font-bold text-center">
                                 <GetText :context="Lang.CreateTranslationContext('home', 'StepNumber', {step: 2})" />
                             </p>
                         </div>
                         <div class="show-left flex flex-col bg-white dark:bg-slate-700 border-4 border-slate-200 dark:border-slate-600 rounded-xl shadow-xl p-8 justify-center items-center space-y-8">
-                            <p class="text-4xl font-bold text-sky-500 text-center">
+                            <p class="text-2xl lg:text-4xl font-bold text-sky-500 text-center">
                                 <GetText :context="Lang.CreateTranslationContext('home', 'PlaceMarkers')" />
                             </p>
-                            <p class="text-xl text-center">
+                            <p class="text-md lg:text-xl text-center">
                                 <GetText class="flex flex-col space-y-4" :context="Lang.CreateTranslationContext('home', 'PlaceMarkersDesc')" />
                             </p>
                         </div>
                     </div>
                 </div>
-                <div ref="part3" class="flex flex-col h-screen w-full justify-center items-center space-y-8">
-                    <div class="flex flex-col max-w-[50%]">
+                <div ref="part3" class="flex flex-col h-screen w-full justify-center items-center space-y-8 p-4">
+                    <div class="flex flex-col lg:max-w-[50%]">
                         <div class="show-up flex justify-center items-center p-6">
-                            <p class="drop-shadow-xl text-6xl font-bold">
+                            <p class="drop-shadow-xl text-4xl lg:text-6xl font-bold text-center">
                                 <GetText :context="Lang.CreateTranslationContext('home', 'AllReady')" />
                             </p>
                         </div>
                         <div class="show-up flex flex-col bg-white dark:bg-slate-700 border-4 border-slate-200 dark:border-slate-600 rounded-xl shadow-xl p-8 justify-center items-center space-y-8">
-                            <p class="text-4xl font-bold text-sky-500 text-center">
+                            <p class="text-2xl lg:text-4xl font-bold text-sky-500 text-center">
                                 <GetText :context="Lang.CreateTranslationContext('home', 'StartTracking')" />
                             </p>
-                            <p class="text-xl text-center">
+                            <p class="text-md lg:text-xl text-center">
                                 <GetText class="flex flex-col space-y-4" :context="Lang.CreateTranslationContext('home', 'StartTrackingDesc')" />
                             </p>
                         </div>

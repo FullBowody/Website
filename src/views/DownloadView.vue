@@ -1,22 +1,22 @@
 <template>
-    <div class="relative flex w-full h-full justify-center items-center">
-        <div class="show-up flex p-8 justify-center h-fit"> 
-            <div class="flex w-fit flex-col items-center rounded-xl py-8 px-12 bg-white dark:bg-slate-800 shadow-2xl space-y-8"> 
-                <p class="text-center text-2xl md:text-4xl font-semibold text-sky-500"> 
+    <div class="relative flex w-full h-full min-h-fit pt-20 md:justify-center md:items-center">
+        <div class="show-up flex p-8 justify-center h-fit mx-auto"> 
+            <div class="flex w-fit flex-col items-center rounded-xl py-4 md:py-8 px-4 md:px-12 bg-white dark:bg-slate-800 shadow-2xl space-y-4 md:space-y-8"> 
+                <p class="text-center text-2xl md:text-4xl font-semibold text-sky-500 w-fit"> 
                     <get-text :context="Lang.CreateTranslationContext('download', 'DownloadFullBowody')" /> 
                 </p> 
                 <div class="flex flex-col md:flex-row justify-evenly items-center space-y-4 md:space-x-12 md:space-y-0"> 
                     <div 
                         v-for="download in downloads" 
                         :key="download.platform" 
-                        class="show-up px-12 py-8 rounded-lg bg-slate-100 dark:bg-slate-700 border-2" 
+                        class="show-up px-6 lg:px-12 py-4 lg:py-8 rounded-lg bg-slate-100 dark:bg-slate-700 border-2" 
                         :class="platform === download.platform ? 'border-sky-500' : 'border-slate-200 dark:border-slate-600'" 
                     > 
                         <div 
                             class="flex justify-center" 
                             :class="platform === download.platform ? 'text-sky-500' : 'text-slate-700 dark:text-slate-200'" 
                         > 
-                            <svg xmlns="http://www.w3.org/2000/svg" :viewBox="download.viewbox" class="h-20" fill="currentColor"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" :viewBox="download.viewbox" class="h-12 lg:h-20" fill="currentColor"> 
                                 <path :d="download.path" /> 
                             </svg> 
                         </div> 
