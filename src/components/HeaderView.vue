@@ -26,7 +26,8 @@ import Lang from '@/scripts/Lang';
 import {
     ArrowDownTrayIcon,
     HomeIcon,
-    NewspaperIcon
+    NewspaperIcon,
+    SquaresPlusIcon
 } from '@heroicons/vue/24/outline';
 
 export default defineComponent({
@@ -42,6 +43,11 @@ export default defineComponent({
                     name: 'Home',
                     icon: HomeIcon,
                     href: '/'
+                },
+                {
+                    name: 'Addons',
+                    icon: SquaresPlusIcon,
+                    href: '/addons'
                 },
                 {
                     name: 'Download',

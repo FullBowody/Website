@@ -14,10 +14,11 @@
 </template>
 
 
-<script>
+<script lang="ts">
+import { defineComponent } from 'vue';
 import Lang from '@/scripts/Lang';
 
-export default {
+export default defineComponent({
     name: "GetText",
     props: {
         context: {
@@ -52,7 +53,7 @@ export default {
             });
         }
     }
-}
+});
 </script>
 
 <style scoped>

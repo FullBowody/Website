@@ -1,7 +1,15 @@
 import { METHOD, Route } from "./API";
 
 export default {
-    // BETA: {
-    //     REGISTER: (email: string) => new Route(`beta/register`, METHOD.POST, undefined, { email }),
-    // }
+    ADDONS: {
+        GET: () => new Route(`https://store.apis.furwaz.fr/store/products?app=6`, METHOD.GET),
+    },
+    FURWAZ: {
+        USER: {
+            GET: (id: number) => new Route(`https://main.apis.furwaz.fr/users/${id}`, METHOD.GET)
+        },
+        APP: {
+            GET: (id: number) => new Route(`https://main.apis.furwaz.fr/apps/${id}`, METHOD.GET)
+        }
+    },
 };

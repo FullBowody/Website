@@ -13,6 +13,7 @@
 import { defineComponent } from "vue";
 import { RouterView } from "vue-router";
 import HeaderView from "./components/HeaderView.vue";
+import { API } from "./scripts/API";
 
 export default defineComponent({
     components: {
@@ -25,10 +26,7 @@ export default defineComponent({
         }
     },
     setup() {
-        
-    },
-    mounted() {
-        
+        API.Setup(import.meta.env.VITE_API_URL);
     }
 });
 </script>
