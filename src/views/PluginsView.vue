@@ -3,12 +3,12 @@
         <div class="flex flex-col w-full h-fit min-h-full justify-center items-center">
             <div class="flex w-full h-fit justify-center items-center">
                 <h1 class="show-up text-4xl font-bold p-12">
-                    <GetText :context="Lang.CreateTranslationContext('addons', 'Title')" />
+                    <GetText :context="Lang.CreateTranslationContext('plugins', 'Title')" />
                 </h1>
             </div>
             <div class="flex grow">
                 <div class="flex flex-wrap w-fit justify-center">
-                    <AddonView v-for="(addon, index) in addons" :key="addon.id" :addon="addon" class="show-up m-4 h-fit w-fit" :style="`animation-delay: ${index+1}00ms`" />
+                    <PluginView v-for="(plugin, index) in plugins" :key="plugin.id" :plugin="plugin" class="show-up m-4 h-fit w-fit" :style="`animation-delay: ${index+1}00ms`" />
                 </div>
             </div>
         </div>
@@ -20,33 +20,33 @@ import { defineComponent } from 'vue';
 import Lang from '@/scripts/Lang';
 import { API } from '@/scripts/API';
 import ROUTES from '@/scripts/routes';
-import AddonView from '@/components/AddonCard.vue';
+import PluginView from '@/components/PluginCard.vue';
 import GetText from '@/components/GetText.vue';
 
 export default defineComponent({
     name: "NotFound",
     components: {
-        AddonView,
+        PluginView,
         GetText
     },
     data() {
         return {
             Lang,
-            addons: [] as any[]
+            plugins: [] as any[]
         };
     },
     mounted() {
-        this.fetchAddons();
+        this.fetchPlugins();
     },
     methods: {
-        async fetchAddons() {
+        async fetchPlugins() {
             const res = await API.Request(ROUTES.ADDONS.GET());
             if (res.error) {
                 console.error(res.error);
                 return;
             }
 
-            this.addons = res.data.products;
+            this.plugins = res.data.products;
         }
     }
 });

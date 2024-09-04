@@ -45,9 +45,9 @@ export default defineComponent({
                     href: '/'
                 },
                 {
-                    name: 'Addons',
+                    name: 'Plugins',
                     icon: SquaresPlusIcon,
-                    href: '/addons'
+                    href: '/plugins'
                 },
                 {
                     name: 'Download',
