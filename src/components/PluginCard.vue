@@ -47,7 +47,7 @@ export default defineComponent({
     },
     methods: {
         purchasePlugin(id: number) {
-            const url = `https://store.furwaz.fr/order/${id}`;
+            const url = `https://store.furwaz.com/order/${id}`;
             window.open(url, '_blank');
         }
     }

@@ -1,3 +1,3 @@
 export default {
-    API_HOST: "https://fullbowody.apis.furwaz.fr"
+    API_HOST: "https://api.fullbowody.com"
 }
